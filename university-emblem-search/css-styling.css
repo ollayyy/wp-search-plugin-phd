@@ -1,0 +1,16 @@
+#university-search-form {
+    margin-bottom: 20px;
+  }
+  
+  #university-search-form input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  #emblem-results img {
+    max-width: 150px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  

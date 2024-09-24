@@ -1,0 +1,71 @@
+Sure! Here’s a simplified step-by-step guide to implement the Google Custom Search-based emblem search feature on your WordPress site.
+
+### **Step-by-Step Instructions**
+
+---
+
+### **Step 1: Get API Credentials**
+1. **Google API Key**: 
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Create a project (if you don’t have one) and enable the **Custom Search API**.
+   - Generate an API key from the credentials section.
+
+2. **Custom Search Engine ID (CX)**:
+   - Visit the [Google Custom Search Engine](https://cse.google.com/cse/).
+   - Create a new search engine, selecting the sites you want to search (or leave it open for web-wide searches).
+   - After creating, you'll get a **Custom Search Engine ID (CX)**.
+
+---
+
+### **Step 2: Create a Custom Plugin in WordPress**
+1. **Access WordPress files**:
+   - Use FTP, a file manager from your hosting provider, or cPanel to access the WordPress file system.
+   - Navigate to `wp-content/plugins/`.
+
+2. **Create a plugin folder**:
+   - Inside the `plugins` folder, create a new folder called `university-emblem-search`.
+
+3. **Create a PHP file**:
+   - Inside the `university-emblem-search` folder, create a new file named `university-emblem-search.php`.
+
+4. **Create a JavaScript file**:
+   - Inside the same folder, create a new JavaScript file named `emblem-search.js`.
+
+---
+
+### **Step 3: Add the Plugin to WordPress**
+1. **Zip the plugin folder**:
+   - Compress the `university-emblem-search` folder into a zip file (you can do this by right-clicking the folder and selecting “Compress” or “Zip”).
+
+2. **Upload the plugin**:
+   - Go to the WordPress admin dashboard.
+   - Navigate to **Plugins** > **Add New** > **Upload Plugin**.
+   - Upload the zipped plugin folder and install it.
+   - After installation, activate the plugin.
+
+---
+
+### **Step 4: Display the Search Box on Your Site**
+1. **Use a Shortcode**:
+   - Go to any WordPress page or post where you want to display the search form.
+   - Add the shortcode `[university_emblem_search]` to the post or page.
+   - Publish or update the post/page.
+
+---
+
+### **Step 5: Customize the Appearance (Optional)**
+1. **Add Custom CSS**:
+   - To make the search form look better, you can style it using custom CSS.
+   - Go to **Appearance** > **Customize** > **Additional CSS** in the WordPress admin area.
+   - Add custom styling for the form and image results.
+
+---
+
+### **Step 6: Test the Search Functionality**
+1. **Go to the page** where you added the shortcode.
+2. **Enter a university name** into the search box.
+3. **Click "Search Emblem"** and the emblems should appear below the search box.
+
+---
+
+Following these steps will implement a search function on your WordPress site that fetches and displays university emblems via Google Custom Search.
